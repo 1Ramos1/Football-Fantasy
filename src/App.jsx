@@ -1,17 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home/Home';
-import PlayerSelection from './components/PlayerSelection/PlayerSelection';
+import Inicio from './components/Inicio/Inicio';
+import Jugadores from './components/Jugadores/Jugadores';
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/player-selection" element={<PlayerSelection />} />
-      </Routes>
-    </Router>
+    <>
+      <Inicio />
+      <Jugadores />
+    </>
   );
-};
+}
 
 export default App;
